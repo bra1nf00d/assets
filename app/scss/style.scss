@@ -1,0 +1,27 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "null";
+
+// WRAPPER
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+// CONTAINER
+.container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $b1 + px) {
+		max-width: 970px;
+	}
+}
+
+// ----------------------------------------------------------------------------------------
+
+// CODE
